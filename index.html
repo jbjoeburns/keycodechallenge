@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keycode Challenge</title>
+    <link href="https://fonts.cdnfonts.com/css/ocr-a-std" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="background">
+    <div id="keycodeTitle" class="keycodeTitleBorder" style="background-color: rgb(0, 0, 0); text-align: center;"> 
+        <div class="topbar">
+            <span>x</span>
+        </div>
+        <!-- make this into a box that fades out after pressing ok -->
+        <h1 class="titleText">K3YC0D3 G3N3R4T0R!</h1>
+        <div class="beginbox" id="beginbox">
+            <span>B3G1N</span>
+
+        </div>
+
+    </div>
+    <div id="displayBoxAnimated" class="keycodeTitleBorder" style="display: none; background-color: rgb(0, 0, 0)"> </div>
+    <div id="displayBox" class="keycodeTitleBorder" style="display: none";>
+        <p class="displayBoxText" id="displayBoxText" style="display: none;"> <span> > Press a key... </span><a class= "flashy" id="flashy1" style="display: inline;"> |</a></p>
+        <p class="displayBoxText" id="displayBoxText2" style="display: none;"> <span> > Hurry up, I haven't got all day... </span><a class= "flashy" id="flashy2" style="display: inline;"> |</a></p>
+    </div> 
+    <div id="keynamebox" class="keycodeTitleBorder" style="display: none";>
+        <span class="keypressed">Key Pressed = </span>
+        <span class="keypressed" id="keypressed"></span>
+        <br>
+        <span class="keypressed">Key Code = </span>
+        <span class="keypressed" id="keycode"></span>
+        <br>
+        <span class="keypressed">Which Value = </span>
+        <span class="keypressed" id="keywhichvalue"></span>
+        <!-- this is where the output boxes go -->
+    </div>
+    <script src="DOM.js"></script> 
+</body>
+</html>
+
+<!-- add bit where it types out "please press a key then flashes a | at the end to make it look like it was typed" -->
